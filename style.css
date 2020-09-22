@@ -35,7 +35,7 @@ a {
 }
 
 .navicon {
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,12 +79,47 @@ input[type=text] {
     padding-left: 20px;
 }
 
+section {
+    width: 100%;
+}
+
+.fontdesc {
+    font-family: Open Sans, sans-serif;
+}
+
+.price {
+    padding-left: 12.5%;
+    padding-bottom: 20px;
+    color: rgb(243, 144, 177);
+    font-weight: bold;
+}
+
+h2 {
+    font-family: Candal, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+h3 {
+    font-family: Candal, sans-serif;
+    padding: 30px 0;
+}
+
+.midicon {
+    display: flex;
+    justify-content: center;
+    color: rgb(251, 139, 155);
+    font-size: 25px;
+}
+
 footer {
     background-color: rgb(33, 62, 78);
     height: 150px;
+    margin-top: 20px;
 }
 
-footer ul {
+footer li {
     padding: 0 50px;
     display: flex;
     align-content: center;
