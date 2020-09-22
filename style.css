@@ -9,6 +9,10 @@ body {
     padding-left: 10%;
 }
 
+#logo {
+    cursor: pointer;
+}
+
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -17,13 +21,13 @@ nav {
     background-color: rgb(252, 252, 252);
 }
 
-ul {
+nav ul {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
 }
 
-li {
+nav li {
     padding: 0 20px;
 }
 
@@ -45,7 +49,8 @@ a {
 .title {
     background-image: url(img/background.jpg);
     background-size: cover;
-    height: 500px;
+    height: 400px;
+    padding-top: 200px;
 }
 
 h1 {
@@ -55,15 +60,15 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .title p {
     color: rgb(254, 252, 254);
     font-size: 2em;
     font-family: Candal, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    padding-top: 50px;
 }
 
 input[type=text] {
@@ -80,7 +85,8 @@ input[type=text] {
 }
 
 section {
-    width: 100%;
+    width: 80%;
+    padding-left: 10%;
 }
 
 .fontdesc {
@@ -99,11 +105,24 @@ h2 {
     display: flex;
     justify-content: center;
     padding: 30px 0;
+    font-size: 1.8em;
 }
 
 h3 {
     font-family: Candal, sans-serif;
     padding: 30px 0;
+    font-size: 1.2em;
+    color: rgb(243, 144, 177);
+}
+
+.firstbloc {
+    margin: 30px 0 0 0;
+    border: dotted;
+}
+
+.secondbloc {
+    margin: 30px 0 0 0;
+    border: dotted;
 }
 
 .midicon {
@@ -115,16 +134,78 @@ h3 {
 
 footer {
     background-color: rgb(33, 62, 78);
-    height: 150px;
+    height: 100px;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer li {
-    padding: 0 50px;
     display: flex;
-    align-content: center;
+    justify-content: space-between;
 }
 
 footer a {
     color: rgb(254, 252, 254);
+}
+
+@media screen and (max-width: 768px) {
+    #logo {
+        position: absolute;
+        top: 0;
+    }
+
+    nav ul {
+        display: block;
+        padding-top: 150px;
+        padding-bottom: 20px;
+    }
+
+    nav li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title {
+        height: 600px;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 0.8em;
+    }
+
+    section {
+        display: block;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    footer ul {
+        display: block;
+        margin: auto;
+    }
+
+    footer li {
+        padding: 10px 0;
+        width: 50%;
+        margin: auto;
+    }
+    
+    footer a {
+        width: 100%;
+        text-align: center;
+    }
 }
